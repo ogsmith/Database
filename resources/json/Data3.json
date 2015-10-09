@@ -1,0 +1,38 @@
+[
+	{
+		"title": "Data 1000",
+		"data": "Lorem Ipsum ",
+		"image": "gem-02.gif"		
+	},
+	{
+		"title": "Data 2",
+		"data": "2222222222222222222222222",
+		"image": "gem-02.gif"		
+	},
+	{
+		"title": "Data 3",
+		"data": "3333333333333333333",
+		"image": "gem-02.gif"
+	},
+	{
+		"title": "Data 4",
+		"data": "555555555555555",
+		"image": "gem-02.gif"
+	},
+	{
+		"title": "Data 100",
+		"data": "122123123123123",
+		"image": "gem-02.gif"
+	},
+	
+	{
+		"title": "Data 77",
+		"data": "777777777777",
+		"image": "gem-01.gif"
+	},
+	{
+		"title": "Data 8",
+		"data": "9898989898",
+		"image": "gem-01.gif"
+	}
+]

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Riverside Research</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<script src="app-deps.js"></script>
+	<script src="app3.js"></script>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="mainContainer" data-ng-app="dataGrab">
+			   <div id = "logo">
+<img src = "rrlogo.png"></img>
+</div>
+	   <div class="dropdown">
+		<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select DataSet
+		<span class="caret"></span></button>
+		<ul class="dropdown-menu">
+			<li><a href="index.html">DataStream 1</a></li>
+			<li><a href="index2.html">DataStream 2</a></li>
+			<li><a href="index3.html">DataStream 3</a></li>
+			</ul>
+			</div>
+		<h1>Data Set 3</h1>
+
+		<input type="text" data-ng-model="search.$">
+
+		<div data-ng-controller="dataCtrl">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Title</th>
+						<th>Data</th>
+						<th>Graph</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr data-ng-repeat="player in players | filter:search | orderBy:'created_at' | limitTo: 5">
+						<td>{{player.title}}</td>
+						<td>{{player.data}}</td>
+						<td> <img ng-src="{{player.image}}"/></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>
